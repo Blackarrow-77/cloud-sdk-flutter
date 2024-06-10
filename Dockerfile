@@ -1,4 +1,4 @@
-FROM google/cloud-sdk:424.0.0
+FROM google/cloud-sdk:479.0.0
 
 USER root
 
@@ -15,8 +15,8 @@ ENV ANDROID_SDK_ROOT=$ANDROID_HOME \
 # comes from https://developer.android.com/studio/#command-tools
 ENV ANDROID_SDK_TOOLS_VERSION 9477386
 
-ENV ANDROID_PLATFORM_VERSION 33
-ENV ANDROID_BUILD_TOOLS_VERSION 33.0.2
+ENV ANDROID_PLATFORM_VERSION 34
+ENV ANDROID_BUILD_TOOLS_VERSION 35.0.0-rc4
 
 ENV FLUTTER_HOME=${HOME}/sdks/flutter \
     FLUTTER_VERSION=$flutter_version
